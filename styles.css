@@ -5,3 +5,18 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --grey950: #2f2f2f;
+  --grey400: #adb5be;
+  --grey200: #dfdee0;
+  --purple950: #21092f;
+  --purple500: #d53aff;
+  --orange400: #ff834a;
+  --blue400: #47a2ff;
+  --red: #ff5050;
+  --gradient1: linear-gradient(#fff, #d2d3d9);
+  --gradient2: linear-gradient(#6348fe, #610595);
+}
