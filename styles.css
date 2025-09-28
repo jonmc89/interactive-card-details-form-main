@@ -199,3 +199,51 @@ button {
     width: 70%;
   }
 }
+
+@media screen and (min-width: 90rem) {
+  main {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+  }
+
+  .card-logo {
+    width: 6rem;
+  }
+
+  .card-number {
+    font-size: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  .card-name-exp-details {
+    font-size: 1.2rem;
+  }
+
+  .card-image-container {
+    height: 100vh;
+  }
+
+  .card-back-image {
+    height: 18rem;
+    width: 30rem;
+    left: 24rem;
+    top: 35rem;
+  }
+
+  .card-front-container {
+    padding: 2rem;
+    top: 12rem;
+    left: 18rem;
+    height: 18rem;
+    width: 30rem;
+  }
+
+  .card-form-container {
+    height: 100vh;
+    padding: 0 0 0 20rem;
+  }
+
+  form {
+    width: 60%;
+  }
+}
