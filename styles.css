@@ -60,20 +60,9 @@
   display: flex;
 }
 
-.circle-big {
-  background-color: var(--white);
-  border: 0.1rem solid var(--white);
-  border-radius: 50%;
-  height: 1.5rem;
-  margin-inline-end: 0.5rem;
-  width: 1.5rem;
-}
-
-.circle-small {
-  border: 0.1rem solid var(--white);
-  border-radius: 50%;
-  height: 1rem;
-  width: 1rem;
+.card-logo {
+  height: auto;
+  width: 3rem;
 }
 
 .card-number {
@@ -88,4 +77,125 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.7rem;
+}
+
+/* Form */
+
+.card-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+}
+
+label {
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  margin-block-end: 0.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 0.1rem solid var(--grey400);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-block-end: 2rem;
+  padding: 0.5rem 1rem;
+}
+
+.card-form-exp-cvc-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.cvc-label {
+  margin-block-end: 1rem;
+}
+
+.exp-input-container {
+  margin-top: 1rem;
+}
+
+.exp-input {
+  width: 5rem;
+  cursor: pointer;
+}
+.cvc-input {
+  width: 7rem;
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--purple950);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 51.25rem) {
+  .card-image-container {
+    background-image: url(./images/bg-main-desktop.png);
+    background-size: cover;
+    height: 25rem;
+  }
+
+  .card-form-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-back-image {
+    height: 15rem;
+    width: 27rem;
+    left: 16rem;
+    top: 7rem;
+  }
+
+  .card-front-container {
+    padding: 2rem;
+    top: 16rem;
+    left: 8rem;
+    height: 15rem;
+    width: 27rem;
+  }
+
+  .card-form-container {
+    padding-top: 14rem;
+  }
+
+  .card-logo {
+    width: 4rem;
+  }
+
+  .card-number {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .card-name-exp-details {
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+  }
+
+  form {
+    width: 70%;
+  }
 }
